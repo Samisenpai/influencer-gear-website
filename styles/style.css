@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+.width-wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/*? variables for this site  */
+
+    :root{
+        --primary: #E02C6D;
+        --secondary:#3A3A3A;
+        --bold:800;
+        --semibold:600;
+        --regular:500;
+        --white:#ffffff;
+        --description-size:1rem;
+        --tittle-size:3rem;
+    }
+
+
+/*? variables for this site  */
+
+
+/*? shared style  */
+
+.br::after {
+    content: "\A";
+    white-space: pre;
+}
+
+
+/*? shared style  */
+
+
+
+
+/*? Header section  */
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.logo{
+    font-size: 1.3rem;
+    color: var(--secondary);
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.menu{
+    font-size: var(--description-size);
+    font-weight: var(--semibold);
+    
+}
+
+.menu-bar .menu li{
+    list-style: none;
+}
+
+.menu-bar .menu li a{
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.menu-bar .menu li i{
+    font-size: 2rem;
+}
+
+
+/*? nav end  */
+
+/*? hero section  */
+
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.tittle{
+    font-size: var(--tittle-size);
+    color: #3A3A3A;
+    margin-bottom: 1rem;
+}
+.description{
+    font-weight: var(--semibold);
+    color: #3A3A3A;
+    margin-bottom: 2rem;
+}
+.side-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/Circle\ design.svg);
+}
+
+.img{
+    width: 100%;
+    padding: 25px 10px;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 24px;
+    font-weight: var(--semibold);
+    color: var(--white);
+    background-color: var(--primary);
+    font-size: 1rem;
+    border: none;
+    border-radius: 41px;
+}
+
+.btn i{
+    font-size: 1.5rem;
+    font-weight: var(--regular);
+    color: var(--white);
+}
+
+
+/*? hero sponsors  */
+
+.hero-sponsors{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    border:0.1px solid #c0ccda50;
+    width: 95%;
+    margin: 90px auto;
+    padding: 1.9rem 2.2rem 1.4rem 2.2rem;
+}
+
+
+
+/*? hero sponsors  */
+
+
+/*? hero section  */
+
+/*? Header section  end*/
