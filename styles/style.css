@@ -147,10 +147,10 @@
 
 .hero-sponsors{
     
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
     align-items: center;
-    gap: 7rem;
     border:0.1px solid #c0ccda50;
     width: 95%;
     margin: 95px auto;
@@ -242,8 +242,8 @@
     }
 
     .img img{
-        
-       width: 100%;
+       padding:10px 0 0 70px ;
+       width: 80%;
     }
     .sponsor{
         display: flex;
@@ -259,22 +259,125 @@
        display: grid;
        column-gap: 2rem;
        row-gap: 10px;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto;
+        justify-items: center;
         align-items: center;
         border: none;
     }
 
-.hero-sponsors img{
-    justify-self: center;
-    align-self: center;
+
+
+
+
+   
 }
 
-   .hero-sponsors .tg{
-    grid-column: 2;
+
+/*? responsive for medium devices  */
+
+@media screen and (min-width:576px) and (max-width:992px){
+    
+    .width-wrapper{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+   .header{
+    margin: -30px 5px 0 10px;
+    height: 100vh;
    }
+
+   .menu-bar .menu li a{
+    display: none;
 }
 
+.logo{
+    font-size: 1.5rem;
+}
+
+
+.bx-cart{
+    font-size: 1rem;
+}
+
+.tittle{
+        
+    font-size: 2rem;
+}
+
+
+.hero-section{
+    display: flex;
+    flex-direction: column-reverse;
+   
+}
+
+.br{
+    display: none;
+}
+
+.side-1{
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.button{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tittle{
+    
+    font-size: 2rem;
+}
+
+.side-2{
+    margin: 0 auto;
+    width: 80%;
+    background-size: contain ; 
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    
+}
+
+.img img{
+    padding: 10px 0 0 70px;
+   width: 80%;
+}
+.sponsor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+}
+
+
+
+.hero-sponsors{
+
+   display: grid;
+   column-gap: 2rem;
+   row-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.hero-sponsors img{
+justify-self: center;
+align-self: center;
+}
+
+
+}
 
 
 
