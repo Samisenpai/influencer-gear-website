@@ -146,10 +146,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 6rem;
+    gap: 7rem;
     border:0.1px solid #c0ccda50;
     width: 95%;
-    margin: 90px auto;
+    margin: 95px auto;
     padding: 1.9rem 2.2rem 1.4rem 2.2rem;
 }
 
@@ -159,5 +159,124 @@
 
 
 /*? hero section  */
+
+
+
+
+/*? header responsive  */
+
+
+@media screen and (max-width:576px) {
+
+    .width-wrapper{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+   .header{
+    margin: -50px 5px 0 10px;
+   }
+   
+        
+    .logo{
+        font-size: 1.5rem;
+    }
+    
+
+    .bx-cart{
+        font-size: 1rem;
+    }
+
+    
+    .menu-bar .menu li a{
+        display: none;
+    }
+
+   .search{
+        display: none;
+    }
+
+
+    .hero-section{
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .br{
+        display: none;
+    }
+
+    .side-1{
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .button{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tittle{
+        
+        font-size: 2rem;
+    }
+
+    .side-2{
+        margin: 0 auto;
+        width: 400px;
+        background-size: contain ; 
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 50px;
+        
+    }
+
+    .img img{
+        
+       width: 100%;
+    }
+    .sponsor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+
+
+    .hero-sponsors{
+
+       display: grid;
+       column-gap: 2rem;
+       row-gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+
+.hero-sponsors img{
+    justify-self: center;
+    align-self: center;
+}
+
+   .hero-sponsors .tg{
+    grid-column: 2;
+   }
+}
+
+
+
+
+
+/*? header responsive  */
+
+
 
 /*? Header section  end*/
