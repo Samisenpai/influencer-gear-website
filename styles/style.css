@@ -92,6 +92,7 @@
 .hero-section{
     display: flex;
     justify-content: space-between;
+    
     align-items: center;
     margin-top: 3rem;
 }
@@ -107,11 +108,14 @@
     margin-bottom: 2rem;
 }
 .side-2{
+   
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: contain;
     background-image: url(../images/Circle\ design.svg);
-}
+    background-repeat: no-repeat;}
+    
 
 .img{
     width: 100%;
@@ -229,7 +233,7 @@
 
     .side-2{
         margin: 0 auto;
-        width: 400px;
+        width: 90%;
         background-size: contain ; 
         background-position: center;
         background-repeat: no-repeat;
