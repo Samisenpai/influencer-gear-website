@@ -211,7 +211,7 @@
     align-items: start;
     flex-direction: column;
     width: 329px;
-    height: 430px;
+    height: 476px;
     border-radius: 8px;
     padding: 17px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) , 0 1px 3px rgba(0, 0, 0, 0.8)  ;
@@ -256,6 +256,10 @@
     grid-column: 3;
 }
 
+.product-name{
+    font-size: 2rem;
+    color: #3A3A3A;
+}
 
 
 /*? collection section end  */
@@ -430,20 +434,74 @@
 
     .hero-sponsors{
 
-       display: grid;
-       column-gap: 2rem;
-       row-gap: 10px;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto auto;
-        justify-items: center;
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
         border: none;
     }
 
 
+    
+    /*? Responsive popular collection section  */
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .popular-collection{
+        box-shadow: none;
+    }
+
+
+     /*? Responsive popular collection section  */
 
 
 
+     /*? Featured  section  Responsive*/
+
+     .featured{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+
+    .featured-container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        box-shadow: none;
+    }
+
+    .description-side{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    .br{
+        display: none;
+    }
+    .featured-tittle{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .description-side .description{
+        text-align: center;
+    }
+
+  
+
+     /*? Featured  section  Responsive*/
    
 }
 
@@ -536,10 +594,11 @@
 
 .hero-sponsors{
 
-   display: grid;
-   column-gap: 2rem;
-   row-gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
+   display: flex;
+   
+   flex-wrap: wrap;
+   
+   gap: 40px;
     justify-content: center;
     align-items: center;
     border: none;
